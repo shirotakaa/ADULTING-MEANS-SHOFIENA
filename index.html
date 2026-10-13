@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dewasa Awal di 2026</title>
+  <meta name="description" content="Game flip card tentang tumbuh, belajar, dan memahami diri sendiri di masa dewasa awal.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="app">
+
+    <!-- ============ 1. INTRO ============ -->
+    <section id="screen-intro"  class="screen screen-intro is-active" aria-labelledby="intro-title">
+      <div class="decor" aria-hidden="true">
+        <span class="deco deco-a">✦</span>
+        <span class="deco deco-b">✧</span>
+        <span class="deco deco-c">✦</span>
+        <span class="deco deco-d">✧</span>
+        <span class="deco deco-e">·</span>
+        <span class="deco deco-f">·</span>
+        <span class="deco deco-butterfly">🦋</span>
+      </div>
+
+      <div class="intro-content">
+        <p class="eyebrow">Psikologi perkembangan II</p>
+        <h1 id="intro-title" tabindex="-1">DEWASA AWAL <span>DI 2026</span></h1>
+        <p class="lede">Growing up isn't always easy, but hey, we're figuring it out.</p>
+        <button type="button" id="btn-start" class="btn btn-primary btn-large">Let's Play!</button>
+        <p class="note">8 concepts. 16 cards. Made by Shofiena.</p>
+      </div>
+    </section>
+
+    <!-- ============ 2. GAME ============ -->
+    <section id="screen-game" class="screen screen-game" aria-labelledby="game-title" hidden>
+      <header class="game-header">
+        <h2 id="game-title" tabindex="-1">Find Your Match</h2>
+        <p class="subtitle">Flip the cards and see what’s behind them.</p>
+
+        <div class="progress-wrap">
+          <div id="progress" class="progress" role="progressbar" aria-label="Pairs discovered"
+               aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" aria-valuetext="0 of 8 pairs discovered">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+          <div class="progress-meta">
+            <p id="progress-text" class="progress-text">0 / 8 pairs discovered</p>
+            <button type="button" id="btn-restart" class="btn btn-ghost btn-small">↺ Restart</button>
+          </div>
+        </div>
+      </header>
+
+      <div id="board" class="board" role="group" aria-label="Kartu permainan"></div>
+
+      <footer class="game-footer">
+        <p class="microcopy">Take your time. There's no rush to grow up.</p>
+        <button type="button" id="btn-view-reflection" class="btn btn-ghost btn-small" hidden>Lihat Refleksi</button>
+        <p class="sparkle-row" aria-hidden="true">✦ · ✧ · ✦ · ✧ · ✦</p>
+      </footer>
+    </section>
+
+    <!-- ============ 3. REFLEKSI ============ -->
+    <section id="screen-reflection" class="screen screen-reflection" aria-labelledby="reflection-title" hidden>
+      <div class="sparkle-field" aria-hidden="true">
+        <span class="sparkle s1">✦</span>
+        <span class="sparkle s2">✧</span>
+        <span class="sparkle s3">✦</span>
+        <span class="sparkle s4">✧</span>
+        <span class="sparkle s5">·</span>
+        <span class="sparkle s6">✦</span>
+        <span class="sparkle s7">✧</span>
+        <span class="sparkle s8">·</span>
+      </div>
+
+      <article class="reflection-inner">
+        <p class="eyebrow reveal" style="--i:0">A NOTE TO YOUR GROWING SELF</p>
+        <h2 id="reflection-title" class="reveal" style="--i:1" tabindex="-1">Dewasa awal di 2026 adalah...</h2>
+
+      <div class="reflection-body">
+        <p class="reveal" style="--i:2">Proses belajar menjadi individu yang lebih mandiri dan bertanggung jawab di tengah
+          dunia yang terus bergerak. Bukan hanya tentang bertambahnya usia, tetapi juga tentang belajar menentukan pilihan,
+          menghadapi konsekuensi, mengelola emosi, menyelesaikan masalah, dan beradaptasi dengan perubahan.</p>
+        <p class="reveal" style="--i:3">Dewasa awal juga tentang mengembangkan kemampuan, menerima dukungan keluarga, serta
+          membangun hubungan yang sehat melalui komitmen dan tanggung jawab. Dalam prosesnya, kita boleh merasa bingung,
+          meminta bantuan, beristirahat, dan belajar kembali dari pengalaman.</p>
+        <p class="reveal" style="--i:4">Setiap individu memiliki pengalaman dan proses perkembangan yang berbeda. Menjadi
+          dewasa bukan tentang siapa yang paling cepat atau siapa yang paling sempurna, melainkan tentang terus belajar
+          mengenali diri, bertanggung jawab atas pilihan, dan berkembang sesuai dengan tahap kehidupan masing-masing.</p>
+      </div>
+
+        <blockquote class="pull-quote reveal" style="--i:6">
+          <p class="quote-en">You don't have to have it all figured out to be growing.</p>
+          <p class="quote-id">Kamu tidak harus memahami semuanya sekarang untuk tetap bertumbuh.</p>
+        </blockquote>
+
+        <p class="closing reveal" style="--i:7">Take your time. You're becoming.</p>
+
+        <div class="actions reveal" style="--i:8">
+          <button type="button" id="btn-back" class="btn btn-ghost">Back to Game</button>
+          <button type="button" id="btn-play-again" class="btn btn-primary">Play Again</button>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ============ MODALS ============ -->
+
+  <!-- Penjelasan keyword -->
+  <div class="modal" id="modal-pair" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="pair-title" aria-describedby="pair-text" tabindex="-1">
+      <p class="eyebrow" id="pair-count"></p>
+      <div class="modal-emoji" id="pair-emoji" aria-hidden="true"></div>
+      <h2 id="pair-title"></h2>
+      <p id="pair-text" class="modal-text"></p>
+      <button type="button" id="pair-close" class="btn btn-primary">Got It ✦</button>
+    </div>
+  </div>
+
+  <!-- Kemenangan -->
+  <div class="modal modal-victory" id="modal-victory" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="victory-title" aria-describedby="victory-sub" tabindex="-1">
+      <div class="victory-stage-1">
+        <h2 id="victory-title" tabindex="-1">YAY, YOU DID IT! ✨</h2>
+        <p id="victory-sub" class="modal-text">You found all 8 pairs. One little step closer to understanding the journey of growing up.</p>
+      </div>
+      <div class="victory-stage-2" id="victory-stage-2" hidden>
+        <p class="divider" aria-hidden="true">✦ ✧ ✦</p>
+        <h3 class="victory-heading">DEWASA AWAL DI 2026 ADALAH...</h3>
+        <p class="modal-text">Bukan tentang memiliki semua jawaban, tetapi tentang terus belajar memahami diri sendiri dan kehidupan.</p>
+        <p class="victory-emoji" aria-hidden="true">🦋 🌷 ✦</p>
+        <button type="button" id="victory-continue" class="btn btn-primary" disabled>Check It Out →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konfirmasi restart -->
+  <div class="modal" id="modal-confirm" hidden>
+    <div class="modal-card modal-small" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-text" tabindex="-1">
+      <h2 id="confirm-title">Start over?</h2>
+      <p id="confirm-text" class="modal-text">Start over? Your current progress will be reset.</p>
+      <div class="modal-actions">
+        <button type="button" id="confirm-cancel" class="btn btn-ghost">Keep Playing</button>
+        <button type="button" id="confirm-ok" class="btn btn-primary">Start Over</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="confetti" class="confetti" aria-hidden="true"></div>
+  <p id="sr-status" class="sr-only" role="status" aria-live="polite"></p>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
