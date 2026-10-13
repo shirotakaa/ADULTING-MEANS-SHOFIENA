@@ -13,7 +13,7 @@
       emoji: '🕊️',
       accentColor: '#DCD7F5',
       explanation:
-        'Autonomy adalah kemampuan untuk mengambil keputusan dan mengarahkan hidup secara mandiri. Kita mulai belajar memilih jalan sendiri, sambil bertanggung jawab atas pilihan yang kita buat.'
+        'Autonomy merupakan kemampuan individu untuk memiliki kendali terhadap kehidupannya sendiri, terutama dalam menentukan pilihan, mengambil keputusan, dan bertanggung jawab atas keputusan tersebut.'
     },
     {
       id: 'family-support',
@@ -29,7 +29,7 @@
       emoji: '🌷',
       accentColor: '#F2D9E2',
       explanation:
-        'Emotional Coping adalah cara kita menghadapi dan mengelola emosi ketika hidup terasa sulit. Kita tidak harus selalu baik-baik saja. Yang penting adalah belajar memahami perasaan dan menemukan cara yang sehat untuk menghadapinya.'
+        'Emotional Coping adalah cara kita menghadapi dan mengelola emosi saat menghadapi tekanan atau masalah. Menjadi dewasa berarti belajar memahami perasaan dan memilih cara yang sehat untuk menghadapinya.'
     },
     {
       id: 'problem-solving',
