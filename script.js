@@ -21,7 +21,7 @@
       emoji: '🏡',
       accentColor: '#DCE8DD',
       explanation:
-        'Family Support adalah dukungan emosional dan praktis yang kita terima dari keluarga. Menjadi dewasa bukan berarti harus menghadapi semuanya sendirian. Memiliki tempat untuk pulang juga bagian dari bertumbuh.'
+        'Family Support adalah dukungan keluarga yang membantu individu dalam menghadapi tantangan kehidupan, mengembangkan kemandirian, dan bertanggung jawab atas dirinya sendiri.'
     },
     {
       id: 'emotional-coping',
@@ -37,7 +37,7 @@
       emoji: '🧩',
       accentColor: '#F6E9B9',
       explanation:
-        'Problem Solving adalah kemampuan mengenali masalah, mempertimbangkan pilihan, dan mencari solusi. Kita mungkin belum selalu tahu jawabannya, tetapi kita bisa belajar menghadapi masalah satu per satu.'
+        'Problem solving adalah kemampuan kita menghadapi masalah secara mandiri, mencari berbagai alternatif solusi, dan mempertimbangkan konsekuensi sebelum mengambil keputusan.'
     },
     {
       id: 'peak-performance',
@@ -45,7 +45,7 @@
       emoji: '⭐',
       accentColor: '#DCD7F5',
       explanation:
-        'Peak Performance menggambarkan kondisi ketika seseorang dapat menunjukkan performa optimal dalam suatu aktivitas. Namun, bertumbuh bukan berarti harus selalu produktif. Istirahat dan mengenali batas diri juga penting.'
+        'Peak Performance adalah kemampuan individu untuk mencapai kinerja terbaiknya dengan memanfaatkan potensi, keterampilan, dan fokus yang dimiliki secara optimal dalam menghadapi tantangan kehidupan.'
     },
     {
       id: 'cognitive-flexibility',
@@ -53,7 +53,7 @@
       emoji: '🦋',
       accentColor: '#DCE8DD',
       explanation:
-        'Cognitive Flexibility adalah kemampuan menyesuaikan cara berpikir ketika menghadapi situasi atau perspektif baru. Kita belajar bahwa tidak semua hal berjalan sesuai rencana dan terkadang, berubah pikiran juga merupakan bentuk perkembangan.'
+        ' Dewasa awal menurut perspektif fleksibilitas kognitif merupakan tahap perkembangan ketika individu mampu menyesuaikan pola pikir, mempertimbangkan berbagai sudut pandang, serta mengubah strategi berpikir sesuai dengan situasi dan tuntutan yang dihadapi.'
     },
     {
       id: 'expertise',
@@ -61,7 +61,7 @@
       emoji: '🎓',
       accentColor: '#F2D9E2',
       explanation:
-        'Expertise adalah pengetahuan dan keterampilan mendalam yang berkembang melalui pembelajaran serta pengalaman. Kita tidak harus langsung ahli dalam segala hal. Kemampuan dapat tumbuh sedikit demi sedikit melalui proses.'
+        'Expertise adalah keahlian atau penguasaan seseorang terhadap bidang tertentu yang berkembang melalui proses belajar, latihan, pengalaman, dan penerapan pengetahuan secara berulang.'
     },
     {
       id: 'love-commitment',
@@ -69,7 +69,7 @@
       emoji: '💌',
       accentColor: '#F6E9B9',
       explanation:
-        ' Love Commitment adalah keputusan untuk mencintai seseorang serta niat untuk mempertahankan hubungan dengan pasangannya dalam jangka waktu yang panjang. Komitmen merupakan salah satu dari tiga komponen cinta bersama keintiman (intimacy) dan gairah (passion).'
+        'Love Commitment adalah keputusan untuk mencintai seseorang serta niat untuk mempertahankan hubungan dengan pasangannya dalam jangka waktu yang panjang.'
     }
   ];
 
